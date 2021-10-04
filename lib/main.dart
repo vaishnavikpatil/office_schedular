@@ -1,3 +1,4 @@
+//@dart=2.9
 import 'package:flutter/material.dart'  show Colors, MaterialApp, ThemeData, WidgetsFlutterBinding, runApp;
 import './app_screens/login_screen.dart';
 import 'package:google_fonts/google_fonts.dart' show GoogleFonts;
@@ -11,12 +12,10 @@ async{
         theme: ThemeData(
           textTheme:
           GoogleFonts.josefinSansTextTheme(),
-            primaryColor: Colors.teal,
-            accentColor: Colors.tealAccent,
+          primaryColor: Colors.teal,
         ),
       )
   );
 }
-
 
 

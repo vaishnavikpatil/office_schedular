@@ -1,8 +1,10 @@
-import 'package:flutter/cupertino.dart';
+//@dart=2.9
+ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:office_schedular/palatte.dart';
 import '../widgets/widgets.dart';
+
 class  LoginPage extends StatelessWidget{
 
 @override
