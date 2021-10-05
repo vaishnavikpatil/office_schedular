@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "272679670004",
+    "project_id": "office-schedular",
+    "storage_bucket": "office-schedular.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272679670004:android:93a2ffbbb0ec5d48b4cea1",
+        "android_client_info": {
+          "package_name": "com.example.office_schedular"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272679670004-rdth2tuqj90brb07s21hnrdqp9jdni28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClrsm6NJ7NA3JqHWN9ucca02Ihpi68eYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272679670004-rdth2tuqj90brb07s21hnrdqp9jdni28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
