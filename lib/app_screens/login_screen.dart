@@ -10,8 +10,7 @@ class LoginPage extends StatelessWidget {
     return Stack(
       children: [
         BackgroundImage(),
-        SingleChildScrollView(
-          child: Scaffold(
+        Scaffold(
             backgroundColor: Colors.transparent,
             body: SafeArea(
               child: Column(
@@ -88,7 +87,6 @@ class LoginPage extends StatelessWidget {
               ),
             ),
           ),
-        ),
       ],
     );
   }
