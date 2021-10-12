@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../palatte.dart';
+TextEditingController passwordController = TextEditingController();
 
 class PasswordInput extends StatelessWidget {
   const PasswordInput({
@@ -24,6 +25,7 @@ class PasswordInput extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
         ),
         child: TextField(
+          controller: passwordController,
           decoration: InputDecoration(
               contentPadding: const EdgeInsets.symmetric(vertical: 20),
               border: InputBorder.none,

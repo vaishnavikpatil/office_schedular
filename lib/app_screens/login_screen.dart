@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:office_schedular/app_screens/register_screen.dart';
 import 'package:office_schedular/palatte.dart';
 import '../widgets/widgets.dart';
 
@@ -11,9 +12,9 @@ class LoginPage extends StatelessWidget {
       children: [
         BackgroundImage(),
         Scaffold(
-            backgroundColor: Colors.transparent,
+           backgroundColor: Colors.transparent,
             body: SafeArea(
-              child: Column(
+              child: ListView(
                 children: [
                   Container(
                     height: 200,
@@ -36,6 +37,7 @@ class LoginPage extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             TextInput(
+
                               icon: FontAwesomeIcons.user,
                               hint: 'Login e.g. abc@123',
                               inputType: TextInputType.emailAddress,
@@ -47,10 +49,14 @@ class LoginPage extends StatelessWidget {
                               inputType: TextInputType.visiblePassword,
                               inputAction: TextInputAction.done,
                             ),
-                            Text(
-                              'Forgot Password?',
-                              style: kBodyText,
+                            
+                            TextButton(
+                              onPressed: () {} ,
+                              child: Text(
+                                'Forgot Password?',
+                                style: kBodyText,
 
+                              ),
                             ),
                           ],
                         ),
@@ -59,24 +65,40 @@ class LoginPage extends StatelessWidget {
                             SizedBox(
                               height: 35,
                             ),
+                            LoginButton(
+                              buttonText: 'Login',
+                            ),
+                            SizedBox(
+                              height: 15,
+                            ),
+                            Container(
+                              child: Text(
+                                '----------Or----------',
+                                style: kBodyText,
+                              ),
+                            ),
+                            SizedBox(height: 15,),
                             Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(16),
+                                color: Colors.teal,
+                              borderRadius: BorderRadius.circular(16),
                               ),
                               child: TextButton(
-                                onPressed: () {},
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 10.0),
-                                  child: Text(
-                                    'Login',
-                                    style: kBodyText,
-                                  ),
-                                ),
+                                onPressed: () {
+                                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Register()));
+                                },
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 10.0),
+                                    child: Text(
+                                  'Register',
+                                   style: kBodyText,
 
                               ),
+
+                               )
+                              )
                             )
                           ],
                         )
@@ -87,6 +109,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
           ),
+
       ],
     );
   }

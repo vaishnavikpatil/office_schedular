@@ -3,14 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../palatte.dart';
+TextEditingController loginController = TextEditingController();
 
-class TextInput extends StatelessWidget {
+class TextInput extends StatelessWidget
+{
   const TextInput({
     Key? key,
     required this.icon,
     required this.hint,
     required this.inputType,
     required this.inputAction,
+
   }) : super(key: key);
   final IconData icon;
   final String hint;
@@ -25,6 +28,7 @@ class TextInput extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
         ),
         child: TextField(
+          controller: loginController,
           decoration: InputDecoration(
               contentPadding: const EdgeInsets.symmetric(vertical: 20),
               border: InputBorder.none,

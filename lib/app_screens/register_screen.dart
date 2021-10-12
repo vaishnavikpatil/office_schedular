@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:office_schedular/app_screens/home_screen.dart';
 import 'package:office_schedular/palatte.dart';
 import 'package:office_schedular/widgets/background-image.dart';
 
@@ -137,6 +138,7 @@ class  RegisterState extends State<Register>{
                               child: ElevatedButton(
                                 child: Text('Register'),
                                 onPressed:(){
+                                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
                                 },
                               ),
 

@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:office_schedular/app_screens/calendar_screen.dart';
 import 'package:google_fonts/google_fonts.dart' show GoogleFonts;
+import 'package:office_schedular/app_screens/login_screen.dart';
 void main()
 async{
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: App(),
+        home: LoginPage(),
         theme: ThemeData(
           textTheme:
           GoogleFonts.josefinSansTextTheme(),
