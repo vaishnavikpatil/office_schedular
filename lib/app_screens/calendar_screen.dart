@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-
 class Calendar extends StatefulWidget {
   @override
   _CalendarState createState() => _CalendarState();
@@ -39,10 +38,10 @@ class _CalendarState extends State<Calendar> {
         title: Text("Calendar"),
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisSize : MainAxisSize.min,
+      body: ListView(
+
         children: [
-          Flexible(child:
+         Expanded(child:
           TableCalendar(
             focusedDay: selectedDay,
             firstDay: DateTime(1990),
@@ -155,6 +154,7 @@ class _CalendarState extends State<Calendar> {
             ],
           ),
         ),
+        backgroundColor: Colors.teal,
         label: Text("Add Event"),
         icon: Icon(Icons.add),
       ),
@@ -171,3 +171,5 @@ class Event {
 
   String toString() => this.title;
 }
+
+

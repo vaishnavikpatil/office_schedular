@@ -21,6 +21,7 @@ class  RegisterState extends State<Register>{
   Widget build(BuildContext context){
     return Scaffold(
         appBar:AppBar(
+          backgroundColor: Colors.teal,
           title: Text('Register'),
         ) ,
         body:Stack(
@@ -140,13 +141,17 @@ class  RegisterState extends State<Register>{
                                 onPressed:(){
                                   Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Home()));
                                 },
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.teal,
                               ),
 
 
                           ),
 
 
-                        ],),
+                          )
+                        ],
+                        ),
                       )
 
 

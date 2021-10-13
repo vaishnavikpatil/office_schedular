@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:office_schedular/app_screens/login_screen.dart';
 import 'package:office_schedular/app_screens/profile_screen.dart';
 import 'package:office_schedular/app_screens/groups_screen.dart';
 import 'package:office_schedular/app_screens/notifications_screen.dart';
@@ -84,6 +85,12 @@ class  NavigationDrawerWidget extends StatelessWidget{
               icon: Icons.help,
               onClicked: () => selectedItem(context, 6),
             ),
+        const SizedBox(height: 24),
+        buildMenuItem(
+          text: "Logout",
+          icon: Icons.logout,
+          onClicked: () => selectedItem(context,7),
+        )
           ],
         ),
       ),
@@ -138,6 +145,11 @@ class  NavigationDrawerWidget extends StatelessWidget{
       case 6:
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context)=>Aboutapp(),
+        ));
+        break;
+      case 7:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context)=>LoginPage(),
         ));
         break;
     }

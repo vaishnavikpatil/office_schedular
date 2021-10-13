@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart'  show Colors, MaterialApp, ThemeData, WidgetsFlutterBinding, runApp;
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:office_schedular/app_screens/calendar_screen.dart';
-import 'package:google_fonts/google_fonts.dart' show GoogleFonts;
 import 'package:office_schedular/app_screens/login_screen.dart';
+import 'package:google_fonts/google_fonts.dart' show GoogleFonts;
+
 void main()
 async{
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: LoginPage(),
+        home: App(),
         theme: ThemeData(
           textTheme:
           GoogleFonts.josefinSansTextTheme(),
@@ -44,7 +44,7 @@ class _AppState extends State<App> {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return Calendar();
+          return LoginPage();
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
