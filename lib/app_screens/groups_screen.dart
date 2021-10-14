@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:office_schedular/app_screens/create_group.dart';
 
 class Groups extends StatefulWidget {
   @override
@@ -15,7 +16,7 @@ class  GroupsState extends State<Groups> {
         backgroundColor: Colors.teal,
         title: Text('Group'),
       ),
-      body: Chat(),
+      body:CreateGroup(),
     );
   }
 }
@@ -31,7 +32,18 @@ class Chat  extends StatefulWidget {
 class  ChatState extends State<Chat> {
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return  Scaffold(
+        appBar:AppBar(
+        backgroundColor: Colors.teal,
+        title: Text('Group'),
+          actions: [
+            IconButton(
+              icon: Icon(Icons.share),
+              onPressed: () {},
+            ),
+          ],
+    ),
+    body:Stack(
       children: <Widget>[
         Align(
           alignment: Alignment.bottomLeft,
@@ -52,7 +64,7 @@ class  ChatState extends State<Chat> {
                       color: Colors.teal,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Icon(Icons.add, color: Colors.white, size: 20, ),
+                    child: Icon(Icons.camera_alt_outlined, color: Colors.white, size: 20, ),
                   ),
                 ),
                 SizedBox(width: 15,),
@@ -78,7 +90,7 @@ class  ChatState extends State<Chat> {
           ),
         ),
       ],
-    );
+    ));
 
   }
 }
