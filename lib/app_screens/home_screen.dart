@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:office_schedular/app_screens/login_screen.dart';
 import 'package:office_schedular/app_screens/profile_screen.dart';
 import 'package:office_schedular/app_screens/groups_screen.dart';
-import 'package:office_schedular/app_screens/notifications_screen.dart';
+
 import 'package:office_schedular/app_screens/calendar_screen.dart';
 import 'package:office_schedular/app_screens/settings_screen.dart';
 import 'package:office_schedular/app_screens/todo_screen.dart';
@@ -25,6 +25,7 @@ class  HomeState extends State<Home> {
         title: Text('Office Schedular'),
       ),
       drawer: NavigationDrawerWidget(),
+      body:Todo(),
     );
   }
 }
@@ -63,25 +64,13 @@ class  NavigationDrawerWidget extends StatelessWidget{
             ),
             const SizedBox(height: 24),
             buildMenuItem(
-              text: "Notification",
-              icon: Icons.notifications,
-              onClicked: () => selectedItem(context, 3),
-            ),
-            const SizedBox(height: 24),
-            buildMenuItem(
-              text: "To Do",
-              icon: Icons.playlist_add_check_outlined,
-              onClicked: () => selectedItem(context, 4),
-            ),
-            const SizedBox(height: 24),
-            buildMenuItem(
-              text: "Settings",
-              icon: Icons.settings,
+              text: "Updates",
+              icon: Icons.update,
               onClicked: () => selectedItem(context, 5),
             ),
             const SizedBox(height: 24),
             buildMenuItem(
-              text: "About App",
+              text: "Contact us",
               icon: Icons.help,
               onClicked: () => selectedItem(context, 6),
             ),
@@ -127,19 +116,10 @@ class  NavigationDrawerWidget extends StatelessWidget{
           builder: (context)=>Calendar(),
         ));
         break;
-      case 3:
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context)=>Notifications(),
-        ));
-        break;
-      case 4:
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context)=>Todo(),
-        ));
-        break;
+
       case 5:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context)=>Settings(),
+          builder: (context)=>Update(),
         ));
         break;
       case 6:

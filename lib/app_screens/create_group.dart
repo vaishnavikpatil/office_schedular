@@ -45,7 +45,7 @@ class  CreateGroupState extends State<CreateGroup> {
                 child: ElevatedButton(
                   child: Text('Join'),
                   onPressed:(){
-                    Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Chat()));
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => Chat()));
                   },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.teal,
@@ -99,7 +99,7 @@ class  CreateGroupState extends State<CreateGroup> {
                          child: ElevatedButton(
                            child: Text('Create'),
                            onPressed:(){
-                             Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Chat()));
+                             Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => Chat()));
                            },
                    style: ElevatedButton.styleFrom(
                      primary: Colors.teal,

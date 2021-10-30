@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
 
-class Settings extends StatefulWidget {
+class Update extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return  SettingsState();
+    return  UpdateState();
   }
 }
 
-class  SettingsState extends State<Settings> {
+class  UpdateState extends State<Update> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
         backgroundColor: Colors.teal,
-        title: Text('Settings'),
+        title: Text('Updates'),
       ) ,
+      body:Center(
+        child: Container(
+          child: Text('No Updates Available'),
+        ),
+      ),
     );
   }
 }
