@@ -1,16 +1,60 @@
-# office_schedular
 
-A new Flutter project.
+# Office Scheduler
+
+Office Scheduler is a Flutter-based mobile application designed to help organizations manage office space scheduling efficiently. This app allows employees to book desks, meeting rooms, and other office resources, helping streamline the office management process.
+
+## Features
+
+- **User Authentication**: Secure login and registration functionality for users.
+- **Resource Booking**: Users can book office resources such as desks and meeting rooms.
+- **Calendar Integration**: Seamless integration with calendars to track bookings and availability.
+- **Notifications**: Real-time notifications for booking confirmations, reminders, and updates.
+- **Admin Dashboard**: A dedicated dashboard for admins to manage resources and view booking analytics.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+Before you begin, ensure you have met the following requirements:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Flutter SDK installed on your local machine.
+- Android Studio or Xcode for building and testing on Android and iOS devices.
+- A code editor like VS Code or Android Studio.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/vaishnavikpatil/office_schedular.git
+   cd office_schedular
+   ```
+
+2. **Install Dependencies**
+
+   Run the following command to install the necessary dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the Application**
+
+   Use the following command to run the application on your device or emulator:
+
+   ```bash
+   flutter run
+   ```
+
+## Project Structure
+
+- `lib/`: Contains the main codebase, including UI screens, widgets, and business logic.
+- `assets/`: Stores images, icons, and other assets used in the app.
+- `android/` & `ios/`: Platform-specific code for Android and iOS.
+- `test/`: Contains unit and widget tests for the app.
+
+## Contributing
+
+Contributions are always welcome! If you have suggestions or bug fixes, feel free to submit a pull request. Please make sure your changes align with the project's code style and guidelines.
+
+
